@@ -5,23 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
+    <style>
+        .firkant {
+
+            height: 100px;
+            width: 100px;
+            line-height: 100px;
+            text-align: center;
+            background-color: green;
+
+        }
+
+        .cirkel {
+
+            height: 100px;
+            width: 100px;
+            line-height: 100px;
+            border-radius: 50%;
+            text-align: center;
+            background-color: red;
+
+        }
+
+    </style>
 </head>
 
 <body>
-    <div id="content">
-        <div>
-            <a href="http://kea.dk">Hjemmeside</a>
-            <div></div>
-            <a href="https://github.com/raniaborg">github</a>
-            <div>
-                <img src="http://mabe-kea.dk/E19/pics/frog.png" alt="frø">
-            </div>
-        </div>
-    </div>
-    <script>
-        document.querySelector("#content");
+    <div class="firkant"></div>
+    <div class="cirkel"></div>
 
-        console.log(document.querySelector("#content"));
+
+    <script>
+        document.querySelector(".firkant").textContent = "grøn Firkant";
+        document.querySelector(".cirkel").textContent = "rød cirkel";
 
     </script>
 
